@@ -37,7 +37,7 @@ $ git clone https://github.com/amosvoron/udacity-data-lakes.git
 - etl.py                 # ETL python code
 - dl.cfg                 # configuration file
 - README.md              # README file
-- LICENCE.md             # LICENCE file
+- LICENSE.md             # LICENSE file
 ```
 
 ## License
