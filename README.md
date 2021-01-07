@@ -16,7 +16,7 @@ Our task is:
 
 The *transformation* part of the ETL process is the most critical one since it must assure that the data from original JSON structure (as dataframe) is properly transformed into analytic tables designed as star schema which will be later used by our analytics team. That said, we'll have to:
 
- - *Filter* log event data to extract song-related data only since the event logs cover also non-music-listening events.
+ - *Filter* log event data to extract song-related data only since the event logs also cover non-music-listening events.
  - Pay special attention to *time dimension* with all kinds of time portions that are required,
  - Carry out *data casting* where necessary.
  - *Properly handle duplicates* before inserting data into dimension tables. For example, the user dimension contains the *level* attribute which is a *user-time related* since the subscription level that belongs to a user in every moment *can change in time*. We'll opt for picking the level from the last user event log record. 
